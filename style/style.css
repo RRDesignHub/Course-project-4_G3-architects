@@ -10,7 +10,9 @@
   font-style: normal;
 }
 
-
+.hide{
+  display: none;
+}
 /* Shared css class */
 .txt-center{
   text-align: center;
@@ -58,8 +60,6 @@ color: #424242;
 
 
 @media screen and (max-width:576px){
- 
-
   .btn{
     padding: 12px 18px;
     border-radius: 5px;
@@ -72,11 +72,23 @@ header{
   padding: 40px 170px;
 }
 
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  header{
+    padding: 30px 70px;
+  }
+
+  .hero .hero-txt {
+    row-gap: 25px;
+    padding: 0 !important;
+}
+}
+
 @media screen and (max-width:576px){
   header{
     padding: 25px 20px;
   }
 }
+
 
 
 /* navbar style */
@@ -142,6 +154,20 @@ header{
   width: 100%;
 }
 
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  
+  .hero .hero-txt {
+    row-gap: 15px;
+    padding: 60px 20px 30px 20px !important;
+}
+
+.hero .hero-txt h1 {
+  padding: 0 50px;
+}
+}
+
+
 @media screen and (max-width:576px) {
   .hero .hero-txt{
     row-gap: 15px;
@@ -169,6 +195,18 @@ main{
 
 main> section{
   margin-bottom: 110px;
+}
+
+
+@media screen and (min-width: 577px) and (max-width: 992px){
+  main{
+    margin-top: 70px;
+    padding: 0 70px;
+  }
+
+  main> section{
+    margin-bottom: 70px;
+  }
 }
 
 @media screen and (max-width:576px) {
@@ -223,6 +261,30 @@ main> section{
 
 .features-text a{
   width: fit-content;
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px){
+  #feature{
+
+    column-gap: 3rem;
+  }
+
+  .features-img{
+    width: calc(50%);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  
+.features-text{
+  width: calc(50%);
+}
+
+.features-text p {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
 }
 
 @media screen and (max-width:576px) {
@@ -324,6 +386,46 @@ main> section{
   font-weight: 500;
  }
 
+
+ @media screen and (min-width: 577px) and (max-width: 992px){
+  #feature-details {
+    flex-direction: column;
+    row-gap: 40px;
+  }
+
+  #feature-details .feature-txt{
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  #feature-details .feature-txt h2 {
+    padding-right: 0px;
+    border-left: 5px solid #FF900E;
+    padding-left: 10px;
+    margin-bottom: 15px;
+  }
+
+  #feature-details .feature-txt .feature-card {
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+  }
+
+  #feature-details .feature-img{
+    margin: 0 auto 90px auto;
+    max-width: 100%;
+    position: relative;
+   }
+
+   #feature-details .feature-img .badge {
+    bottom: -85px;
+    left: 30%;
+    width: 210px;
+    border-radius: 8px;
+  }
+  
+ }
+
  @media screen and (max-width: 576px) {
   #feature-details {
     flex-direction: column;
@@ -407,6 +509,24 @@ main> section{
   font-weight: 500;
 }
 
+
+@media screen and (min-width: 577px) and (max-width: 992px){
+  #fact .fact-text{
+    margin-bottom: 2.5rem;
+  }
+
+  #fact  .fact-cards{
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 30px;
+  }
+
+  #fact  .fact-cards .card{
+    border-radius: 8px;
+    padding: 28px 18px;
+  }
+}
+
 @media screen and (max-width:576px) {
   #fact .fact-text{
     text-align: center;
@@ -458,6 +578,17 @@ main> section{
   filter: grayscale(100%);
 }
 
+@media screen and (min-width: 577px) and (max-width: 992px){
+  #sponsor .sponsors-com{
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  #sponsor .sponsor-txt {
+    margin-bottom: 30px;
+}
+}
+
 @media screen and (max-width: 576px) {
   #sponsor .sponsors-com{
     flex-wrap: wrap;
@@ -472,7 +603,7 @@ main> section{
 
 /* footer */
 footer{
-  margin: 0 170px 5px 170px;
+  margin: 0 170px 0 170px;
   padding: 25px 0;
   background-color: #FFF4E7;
   border-radius: 8px;
@@ -482,9 +613,19 @@ footer p a{
   text-decoration: none;
 }
 
+
+@media screen and (min-width: 577px) and (max-width: 992px){
+  footer{
+    margin: 0 70px;
+    padding: 15px 0;
+    background-color: #FFF4E7;
+    border-radius: 8px;
+  }
+}
+
 @media screen and (max-width: 576px) {
   footer{
-    margin: 0 20px 5px 20px;
+    margin: 0 20px 0 20px;
     padding: 15px 0;
     background-color: #FFF4E7;
     border-radius: 5px;
